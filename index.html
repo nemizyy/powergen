@@ -1,112 +1,64 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <title> Gen </title>
+  <meta charset="UTF-8">
+  <title>PowerGen</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./card.css">
+  <link rel="stylesheet" href="./basket.css">
 </head>
 <body>
-<header>
-    <img class='logo'
-        src='https://cdn.pixabay.com/photo/2018/04/11/20/12/silhouette-3311636_1280.png'
-        alt='Тут має бути картинка'>
-    <div class='menu'>
-        <a class='menu-elements' href='#'>ALL PRODUCTS</a>
-        <a class='menu-elements' href='about.html'>ABOUT</a>
-        <a class='menu-elements' href='#support'>SUPPORT</a>
-    </div>
-</header>
-<main>
-    <div class='container'>
-        <div class='block'>
-            <h1 class='main-text'>Gen - твій вибір, наша якість!</h1>
-            <img height = 400px ; width="700px" style="margin-left: 470px; position: absolute;" src="https://cdn.pixabay.com/photo/2014/12/09/23/40/macbook-562499_1280.png">
-            
-<button class="btn-53">
-  <div class="original">Button</div>
-  <div class="letters">
+<!-- partial:index.partial.html -->
+<head>
+    <script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <span>E</span>
-    <span>X</span>
-    <span>P</span>
-    <span>L</span>
-    <span>O</span>
-    <span>R</span>
-    <span>E</span>
-  </div>
-</button>
+</head>
 
+<body>
+    <div class="container">
+        <img class="logo" src="//cdn.pixabay.com/photo/2018/04/11/20/12/silhouette-3311636_1280.png" alt="">
+        <div class="container__logo">
+            PowerGen
         </div>
+        <div class="container__menu">
+            <a class="all_products">All Products</a>
+            <a class="powerbanks">Powerbanks</a>
+            <a class="generators">Generators</a>
+            <a class="electro">Powerplant</a>
+            <a class="korzina" onclick="Showbasket()">Basket</a>
+        </div>
+        <span class="menubtn"><i class="fa-solid fa-bars"></i></span>
+        <span class="closebtn"><i class="fa-solid fa-xmark"></i></span>
     </div>
-    <h2 class='text'> Найпопулярніші товари </h2>
-    <div id = "product" style="display: flex; margin-top: 20px;">
-        <div class='product-item'>
-            <img class='product-img' src='../img/1.jpg' alt='Тут має бути картинка'>
-            <h3 class='product-title'>Генератор Edon PT 220В</h3>
-            <div class='product-list'>
-              <p style = "text-decoration: line-through; font-size: 20px; padding-bottom: 20px; color: grey; position: relative;" >47999₴</p>
-              <p class='price'>43999₴</p>
-              <a href='' class='button'>Придбати</a>
-            </div>
+    <div class="wrapper">
     
+        <div class="cart-nav-wrap">
+        <div class="cart-nav">
+          <div class="icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Корзина</span>
           </div>
-          <div style="margin-left: 10px;"class='product-item'>
-            <img class='product-img' src='../img/2.jpg' alt='Тут має бути картинка'>
-            <h3 class='product-title'>Генератор KraftDele 230В</h3>
-            <div class='product-list'>
-              <p style = "text-decoration: line-through; font-size: 20px; padding-bottom: 20px; color: grey; position: relative;" >27999₴</p>
-              <p class='price'>24999₴</p>
-              <a href='' class='button'>Придбати</a>
-            </div>
-    
+          <div class="item-count">0</div>
         </div>
-        <div style="margin-left: 10px;"class='product-item'>
-            <img class='product-img' src='../img/3.jpg' alt='Тут має бути картинка'>
-            <h3 class='product-title'>Генератор Tatra Garden 220В</h3>
-            <div class='product-list'>
-              <p style = "text-decoration: line-through; font-size: 20px; padding-bottom: 20px; color: grey; position: relative;" >25999₴</p>
-              <p class='price'>22999₴</p>
-              <a href='' class='button'>Придбати</a>
-            </div>
-    
-        </div>
-        <div style="margin-left: 10px;"class='product-item'>
-            <img class='product-img' src='../img/4.jpg' alt='Тут має бути картинка'>
-            <h3 class='product-title'>Генератор Tatra Garden 220В
-            </h3>
-            <div class='product-list'>
-              <p style = "text-decoration: line-through; font-size: 20px; padding-bottom: 20px; color: grey; position: relative;" >23999₴</p>
-              <p class='price'>20999₴</p>
-              <a href='' class='button'>Придбати</a>
-            </div>
-    
-        </div>
-        <div style="margin-left: 10px;"class='product-item'>
-            <img  class='product-img' src='../img/5.jpg' alt='Тут має бути картинка'>
-            <h3 class='product-title'>Генератор Tatra Garden 230В</h3>
-            <div class='product-list'>
-              <p style = "text-decoration: line-through; font-size: 20px; padding-bottom: 20px; color: grey; position: relative;" >21599₴</p>
-              <p class='price'>19599₴</p>
-              <a href='' class='button'>Придбати</a>
-            </div>
-    
-        </div>
-    </div>
-    <div id = "support" class='last-block'>
-        <h2 class='text-last-block'>Залишилися питання? </h2>
-        <img class = 'img-last-block' 
-        src = 'https://learn.logikaschool.com/uploads/2023/03/devices.png' alt='Тут має бути картинка'>
-        <form class='elem-last-block'>
-            <div class='content-input'>
-                <input class='type-phone' type='tel' placeholder='Ваш номер телефону'>
-                <input class='subm' type='submit' value='Замовити дзвінок'>
-            </div>
-        </form>
-
-    </div>
-    <footer>
-        <img class="avatar" width="150" height="120" src="https://cdn.pixabay.com/photo/2018/04/11/20/12/silhouette-3311636_1280.png" alt="">
-        <p>Copyright © 2024 . All rights reserved.</p>
-        <p>«Gen» — твій вибір, наша якість!</p>
-    </footer>
-</main>
+          </div>
+        
+        <div class="card-wrap">
+          </div>
+        
+      </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <script src="./load_page.js"></script>
+  <script src="./basket.js"></script>
 </body>
 </html>

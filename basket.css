@@ -1,0 +1,206 @@
+.table_price {
+  border-collapse: collapse;
+  border-left: 3px solid #20b2aa;
+  border-right: 3px solid #20b2aa;
+  border-bottom: 3px solid #20b2aa;
+  font-family: "Lucida Grande", sans-serif;
+  width:70%;
+  margin: 0 auto;
+  float:left;
+ }
+.right_block_cart{
+  float:right;
+  width:30%;
+}
+.table_price caption {
+  background: #20b2aa; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px  4px 0 rgba(0,0,0,.3);
+  color: white;
+  font-family: "Roboto Slab",serif;
+  font-style: normal;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+}
+.table_price td, .table_price th {
+  padding: 10px;
+  text-align: center;
+}
+.table_price th {
+  text-align: center;
+  font-size: 18px;
+}
+.table_price tr:nth-child(2n) {
+  background: #E5E5E5;
+}
+.table_price td:last-of-type {
+  text-align: center;
+}
+.table_price a {
+  display: inline-block;
+    padding: 10px;
+    background: #20b2aa;
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    width: 15px;
+    height: 20px;
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+.table_price a:hover {
+  bottom: 2px;
+}
+.table_price img{
+  width: 70px;
+  border-radius:5px;
+}
+.cart_summ, .cart_discount, .cart_delivery, .cart_coupon_all, .cart_summ_all{
+  text-align: right !important;
+}
+.cart_num{
+ width: 40px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.delete_item{
+  cursor:pointer;
+  text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.delete_head{
+  cursor:pointer;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.delete_head_a{
+  cursor:pointer;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.delete_item:hover{
+  color:red;
+}
+.cart_image_block img{
+  display: block;
+  margin: 0 auto;
+  border-radius:5px;
+}
+.send_coupon{
+  background: #20b2aa;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+   position: releative;
+}
+.send_coupon input{
+  height: 20px;
+  width:60%;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background: #ffffff;
+    padding-top: 6px;
+    border: 1px solid #b5b5da;
+}
+
+.send_coupon input:focus::-webkit-input-placeholder {
+    text-indent: 1500px;
+    transition: text-indent 0.5s ease;
+}
+
+.send_coupon input:focus::-moz-placeholder {
+    text-indent: 1500px;
+    transition: text-indent 0.3s ease;
+}
+
+.send_coupon input:focus:-moz-placeholder {
+    text-indent: 1500px;
+    transition: text-indent 0.3s ease;
+}
+
+.send_coupon input:focus:-ms-input-placeholder {
+    text-indent: 1500px;
+    transition: text-indent 0.3s ease;
+}
+.cart_discount{
+  display: none;
+}
+.cart_coupon_all{
+  display: none;
+}
+.ura_sale{
+  position: absolute;
+    left: 10%;
+    font-size: 20px;
+    background: green;
+    padding: 10px;
+    margin-top: -10px;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#link_cart_item{
+  display: inline-block;
+}
+.alarm_block{
+  background: red;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+  margin-bottom: 5px;
+}
+.cart_delivery{
+  display: none;
+  background: #E5E5E5;
+}
+.cart_image_block img{
+  width:95%;
+}
+.cart_summ, .cart_summ_all, .cart_delivery, .cart_discount{
+  font-size: 18px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.print_base{
+  float: right;
+  margin-right: 0px;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  margin-left: 5px;
+}
+.footer_cart{
+  width: 70%;
+}
+.form_cart_fio{
+  width: 37%;
+  border-top: 3px solid #20b2aa;
+    display: inline-grid;
+    border-left: 3px solid #20b2aa;
+    border-right: 3px solid #20b2aa;
+    border-bottom: 3px solid #20b2aa;
+    font-family: "Lucida Grande", sans-serif;
+  margin-top: 10px;
+}
+.form_cart_fio input{
+  display: block;
+    height: 35px;
+}

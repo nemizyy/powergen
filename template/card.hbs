@@ -1,0 +1,17 @@
+{{#each this}}
+<div class="card">
+          <img src="./img/{{image}}" alt="">
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span>{{name}}</span>
+                <p>{{description}}</p>
+              </div>
+              <div class="price">{{price}} грн</div>
+            </div>
+            <div class="buttons">
+              <button class="cart-btn" onclick='Add({{id}},"{{image}}","{{name}}",{{price}})'>Add</button>
+            </div>
+          </div>
+        </div>
+{{/each}}

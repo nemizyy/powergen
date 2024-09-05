@@ -1,0 +1,51 @@
+
+<div class="min_bill_block">
+<div class="right_block_cart">
+</div>
+<table class="table_price">
+   <caption>Basket of products</caption>
+   <tr>
+      <th>Product</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Count</th>
+      <th>Total</th>
+      <th class="delete_head_a">X</th>
+   </tr>
+   {{#each basket.products}}
+   <tr class="tr{{id}}">
+      <td><img src='{{image}}' ></td>
+     <td>{{name}}</td>
+      <td>{{price}} грн</td>
+     
+      <td>
+         <a class="cart_minus" onclick="Delone({{id}}, {{price}})">-</a> 
+         <input class="cart_num" type="text" value="{{count}}" size="3" maxlength="6"> 
+         <a class="cart_plus" onclick="Delone({{id}}, {{price}})">+</a>
+      </td>
+      <td>{{total}} грн</td>
+     <td class="delete_item" onclick="Del({{id}})">x</td>
+   </tr>
+   {{/each}}
+   <tr>
+     
+     
+      <td class="cart_summ" colspan="5">{{basket.total}}</td>
+   </tr>
+   <tr>
+      <td class="cart_delivery" colspan="6"></td>
+   </tr>
+   <tr>
+      <td class="cart_coupon_all" colspan="6"></td>
+   </tr>
+   <tr>
+      <td class="cart_summ_all" colspan="6"></td>
+   </tr>
+</table>
+ <div class="footer_cart">
+  <input type="button" value="Buy" class="print_base"/>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+

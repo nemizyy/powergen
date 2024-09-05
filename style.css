@@ -1,402 +1,117 @@
-/* Підключення шрифта (не видаляти) */
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro:wght@400;700&display=swap');
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	80% {
-		transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-}
-body{
-    margin: 0px; /* забираємо стандартні відступи в тега body */
-    font-family: Roboto Condensed;
-}
-
-/* Ваші стилі */
-
-header{
-    display: flex;
-    height: 80px;
-    padding: 0px 40px;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #5F1F93;
-    color: black;
-    text-align: center;
-    background-color: #5F1F93; 
-}
-
-.logo{
-    height: 46px;
-    margin-right: 50px;
-}
-
-.menu{
-    display: flex;
-    height: 80px;
-    padding: 30px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-grow: 1;
-}
-
-.menu-elements{
-    color: #ffffff;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16.8px; /* 120% */
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-main{
-    padding: 5%;
-}
-
-.container{
-    display: flex;
-    width: 100%;
-    height: 550px;
-    align-items: center;
-    margin-bottom: 120px;
-    border-radius: 32px;
-    background: #5F1F93 top center / 100% repeat url(/uploads/2023/11/phone_bg_0_1699843784.png);
-}
-
-.block{
-    display: flex;
-    padding: 90px 54px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 44px;
-    flex-grow: 1;
-    align-self: stretch;
-}
-
-.main-text{
+* {
+    box-sizing: border-box;
     margin: 0;
-    max-width: 500px;
-    color: #ffffff;
-    font-family: Readex Pro;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 69.6px; /* 120% */
+    padding: 0;
+    font-family: "Oswald", sans-serif;
 }
 
-.text{
-    color: #ffffff;
-    text-align: center;
-    font-family: Readex Pro;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 52.5px; /* 125% */
-    margin-bottom: 57px;
+body {
+    background-image: linear-gradient(to right, lightblue, #666262);
 }
 
-.text-card{
-    color: #000;
-    font-family: Readex Pro;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27.5px; /* 125% */
-}
-
-.price-card{
-    color: #000;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21.6px; /* 120% */
-}
-
-.card-img{
-    width: 244px;
-    height: 214px;
-}
-
-.container-cards{
+.container {
+    position: fixed;
+    z-index: 5;
+    width: auto;
+    height: 20vh;
+    background-image: linear-gradient(to bottom, #20b2aa, lightblue);
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 72px;
+    color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 0.5rem saddlebrown;
 }
 
-.last-block{
-margin-top: 50px;
-display: flex;
-width: 100%;
-padding: 43px 0px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 28px;
-background: #5F1F93;
-border-radius: 32px;
-}
-
-.img-last-block{
-width: 241px;
-height: 149px;
-}
-
-.text-last-block{
-color: #000;
-text-align: center;
-font-family: "Readex Pro";
-font-size: 42px;
-font-style: normal;
-font-weight: 400;
-line-height: 52.5px; /* 125% */
-max-width: 393px
-}
-.type-phone{
-display: flex;
-width: 270px;
-height: 15px;
-padding: 16px 23px;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 54px 0px 0px 54px;
-border: 1px solid #000;
+.container__logo {
+    display: flex;
+    color: #000;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    text-shadow: 0 0 1px #000;
+    font-variant: small-caps;
+    animation: move 2s ease-in-out 0s 1;
 
 }
-.subm{
-color: white;
-display: flex;
-height: 50px;
-padding: 16px 33px;
-justify-content: center;
-align-items: center;
-flex: 1 0 0;
-border-radius: 0px 200px 200px 0px;
-background: #000;
-}
-.content-input{
-display: flex;
-width: 400px;
-height: 50px;
-justify-content: center;
-align-items: center;   
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.product-item {
-   width: 300px;
-   border-bottom: 2px solid #F5F5F5;
-   background: white;
-   border: 2px solid #dab1fa;
-   border-radius: 5px;
-}
-.product-img {
-    display: block;
-    width: 70%;
-    position: relative;
-   left: 40px;
-   right: 40px;
-   padding-top: 35px;
-}
-.product-title {
-   font-size: 18px;
-   font-weight: 600;
-   color: #444444;
- margin-bottom:10px;
- width: 230px;
- position: relative;
- left: 35px;
- right: 35px;
-} 
-.product-list {
-    width: 230px;
-    padding-top: 15px;
- padding-bottom: 15px;
- margin: auto;
- text-align: center;
-}
-.price {
-   display: inline;
-   font-size: 22px;
- color: #5F1F93;
- margin-right: 40px;
-}
-/* From Uiverse.io by doniaskima */ 
-.btn-53,
-.btn-53 *,
-.btn-53 :after,
-.btn-53 :before,
-.btn-53:after,
-.btn-53:before {
-  border: 0 solid;
-  box-sizing: border-box;
+
+@keyframes move {
+    from {
+        margin-top: 100%;
+    }
+
+    to {
+        margin-bottom: 0;
+    }
 }
 
-.btn-53 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
+
+.container__menu {
+    font-size: 1.2rem;
+    animation: fold 1s linear 0s 1;
 }
 
-.btn-53:disabled {
-  cursor: default;
-}
-
-.btn-53:-moz-focusring {
-  outline: auto;
-}
-
-.btn-53 svg {
-  display: block;
-  vertical-align: middle;
-}
-
-.btn-53 [hidden] {
-  display: none;
-}
-
-.btn-53 {
-  border: 1px solid;
-  border-radius: 999px;
-  box-sizing: border-box;
-  display: block;
-  font-weight: 900;
-  overflow: hidden;
-  padding: 1.2rem 3rem;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.btn-53 .original {
-  background: #fff;
-  color: #000;
-  display: grid;
-  inset: 0;
-  place-content: center;
-  position: absolute;
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
-}
-
-.btn-53:hover .original {
-  transform: translateY(100%);
-}
-
-.btn-53 .letters {
-  display: inline-flex;
-}
-
-.btn-53 span {
-  opacity: 0;
-  transform: translateY(-15px);
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
-}
-
-.btn-53 span:nth-child(2n) {
-  transform: translateY(15px);
-}
-
-.btn-53:hover span {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.btn-53:hover span:nth-child(2) {
-  transition-delay: 0.1s;
-}
-
-.btn-53:hover span:nth-child(3) {
-  transition-delay: 0.2s;
-}
-
-.btn-53:hover span:nth-child(4) {
-  transition-delay: 0.3s;
-}
-
-.btn-53:hover span:nth-child(5) {
-  transition-delay: 0.4s;
-}
-
-.btn-53:hover span:nth-child(6) {
-  transition-delay: 0.5s;
-}
-.btn-53:hover span:nth-child(7) {
-  transition-delay: 0.6s;
-}
-.button {
-    position: relative;
-    display: inline-block;
-   text-decoration: none;
- padding: 0 12px;
- background: #5F1F93;
- color: white;
- font-size: 16px;
- line-height: 28px;
- 
-   
-}
-
-.button1 {
+.container__menu a {
     text-decoration: none;
-    width: 200px;
-    height: 35px;
-    border-radius: 200px;
-    border: 2px solid #000;
-    background: #ffffff;
-    color: #000000;
-    font-size: 25px;
-    font-style: normal;
-    text-align: center;
+    color: #000;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    text-shadow: 0 0 1px #000;
+    animation: fold 1s linear 0s 1;
 }
 
-
-.product-item:hover{
-   border-bottom: 2px solid #5F1F93;
-
-}
-.button1, .button:hover{
-    background-size: 100% 100%;
-   background: #5F1F93;
-   
-
-}
-.button1, .button:active{
-   box-shadow: 5px 5px 5px rgb(30, 1, 39);
-
-}
-footer{
-    margin-top: 150px;
-    text-align: center;
-    background-color: white;
-    display: block;
-    padding: 10px;
+.menubtn {
+    display: none;
+    color: #000;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 1.6rem;
 }
 
+.closebtn {
+    display: none;
+    color: #000;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+
+.container__menu a::selection {
+    color: red;
+}
+
+@keyframes fold {
+    from {
+        transform: skew(10deg);
+        color: green;
+        background-color: #000;
+    }
+
+    to {
+        transform: skew(160deg);
+    }
+}
+
+@media (max-width: 618px) {
+    .container__menu {
+        display: none;
+    }
+
+    .menubtn {
+        display: block;
+    }
+}
+@media (min-width: 620px) {
+
+    .menubtn {
+        display: none;
+    }
+}
+/* My style */
+.logo{
+    width: 6%;   
+}
